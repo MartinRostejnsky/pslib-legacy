@@ -1,6 +1,6 @@
 {
   "name": "pslib-legacy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An Chrome extension that brings back the pslib legacy",
   "permissions": ["webRequest", "webRequestBlocking", "http://*.prumyslovkaliberec.cz/*", "https://*.prumyslovkaliberec.cz/*"],
   "background": {
@@ -8,7 +8,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": ["http://*.pslib.cz/*", "https://*.pslib.cz/*"],
       "js": ["contentScript.js"],
       "permissions": ["http://*.pslib.cz/*", "https://*.pslib.cz/*"]
     }
